@@ -1,2 +1,2 @@
 # adventofcode
-moj advent of code
+moj advent of code, pre istotu
