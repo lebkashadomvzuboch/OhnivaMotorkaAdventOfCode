@@ -18,3 +18,5 @@ with open("aoc/input.txt") as subor:
                 vysledok += 1
                 
         print(vysledok)
+
+# vysledok je 2565
