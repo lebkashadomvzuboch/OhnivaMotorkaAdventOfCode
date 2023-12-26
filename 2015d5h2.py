@@ -16,3 +16,5 @@ with open("aoc/input.txt") as subor:
         print(riadok, p1, p2, vysledok)
 
 print(vysledok)
+
+# vysledok je 51
