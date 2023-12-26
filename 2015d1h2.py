@@ -7,4 +7,6 @@ with open("input.txt", "r") as subor:
 			if total < 0:
 				print(index + 1)
 				break
+
+# vysledok je 1797
 			
