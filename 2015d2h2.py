@@ -8,3 +8,5 @@ with open("input.txt", "r") as subor:
 		total += 2 * (cisla[0] + cisla[1]) + (cisla[0] * cisla[1] * cisla[2])
 		
 print(total)
+
+# vysledok je 3737498
