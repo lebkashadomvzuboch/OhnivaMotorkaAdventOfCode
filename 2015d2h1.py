@@ -8,3 +8,5 @@ with open("input.txt", "r") as subor:
 		total += 2 * sum(m) + min(m)
 		
 print(total)
+
+# vysledok je 1586300
