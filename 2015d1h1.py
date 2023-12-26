@@ -5,4 +5,6 @@ with open("input.txt", "r") as subor:
 			total += 1 if zatvorka == "(" else -1
 			
 print(total)
+
+# vysledok je 280
 			
