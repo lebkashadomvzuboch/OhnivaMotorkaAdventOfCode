@@ -91,8 +91,6 @@ def prehladaj_packet(packet, current_index):
 
     return 0
 
-
-prehladaj_packet(packet, 0)
 print(prehladaj_packet(packet, 0)[1])
 
 # vysledok je 10637009915279
