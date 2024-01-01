@@ -52,3 +52,5 @@ def spracuj_signal(pismeno):
 
 
 print(spracuj_signal("a"))
+
+# vysledok je 3176
