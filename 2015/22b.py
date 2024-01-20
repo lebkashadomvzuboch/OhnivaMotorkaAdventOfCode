@@ -90,4 +90,4 @@ hladac(ty, boss, 0, dict(), True)
 print(min(minute_many))
 
 # vysledok je 1937
-# za 20 s
+# za 20 s som na to prisiel
