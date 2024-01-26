@@ -32,3 +32,5 @@ def prehladaj(riadok, pocet_znakov=0):
 
 
 print(prehladaj(riadok))
+
+# vysledok je 120765
