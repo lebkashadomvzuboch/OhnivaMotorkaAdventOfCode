@@ -16,3 +16,5 @@ while True:
         else:
             f.add(vysledok)
 
+# vysledok je 549
+
