@@ -5,3 +5,5 @@ with open("input.txt", "r") as subor:
         vysledok += int(riadok.strip())
 
 print(vysledok)
+
+# vysledok je 508
