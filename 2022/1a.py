@@ -12,4 +12,3 @@ with open("input_.txt", "r") as subor:
 print(vysledok)
 
 # vysledok je 70509
-# git test
