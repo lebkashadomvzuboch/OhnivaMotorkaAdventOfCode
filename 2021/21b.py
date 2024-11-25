@@ -4,22 +4,21 @@ vysledky = dict()
 def zisti(s1, s2, ides1, v1, v2, rodicia=[]):
     if (s1, s2) in vysledky:
         if vysledky[(s1, s2)][0]:
-            return vysledky[1], 0
+            return vysledky[(s1, s2)]
         else:
-            return 0, vysledky[1]
+            return vysledky[(s1, s2)]
 
 
     rodicia.append((s1, s2))
 
 
-    if s1 > 20:
+    if s1 > 20 or s2 > 20:
         for rodic in rodicia:
-            vysledky[rodic] = [True, v1]
-        return 1, 0
-    elif s2 > 20:
-        for rodic in rodicia:
-            vysledky[rodic] = [False, v2]
-        return 0, 1
+            if rodic in vysledky:
+                vysledky[rodic] = [vysledky[rodic][0] + v1, vysledky[rodic][1] + v2]
+            else:
+                vysledky[rodic] = [v1, v2]
+        return [1 if s1>20 else 0, 1 if s2>20 else 0]
     
     if ides1:
         a = zisti(s1+1, s2, not ides1, 0, 0, rodicia=rodicia)
@@ -42,6 +41,8 @@ def zisti(s1, s2, ides1, v1, v2, rodicia=[]):
         c = zisti(s1, s2+3, not ides1, 0, 0, rodicia=rodicia)
         v1, v2  = v1 + c[0], v2 + c[1]
     
-    return v1, v2
+    return [v1, v2]
 
 print(zisti(hrac1, hrac2, True, 0, 0))
+print(vysledky[(hrac1, hrac2)])
+print(vysledky)
