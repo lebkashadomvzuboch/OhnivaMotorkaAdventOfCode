@@ -10,7 +10,7 @@ a.sort()
 b.sort()
 
 for i in range(len(a)):
-    vysledok += abs(a[i] - b[i])
+    vysledok += b.count(a[i]) * a[i]
 
 print(vysledok)
-# vysledok je 1834060
+# vysledok je 21607792
