@@ -8,7 +8,7 @@ with open("aoc/input.txt", "r") as subor:
         if riadok > minule[0]:
             total += 1
             
-        minule.pop(0)
+        minule.remove(0)
         minule.append(riadok)
         
 print(total)

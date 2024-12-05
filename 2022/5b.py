@@ -44,7 +44,7 @@ with open("input_.txt", "r") as subor:
 
         treba_presunut = []
         for i in range(pocet):
-            treba_presunut.append(cranes[od-1].pop(0))
+            treba_presunut.append(cranes[od-1].remove(0))
 
         cranes[do-1] = treba_presunut + cranes[do-1]
 

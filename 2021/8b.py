@@ -4,7 +4,7 @@ originalne_cisla = {"nula": 0, "jeden": 1, "dva": 2, "tri": 3,
 
 
 def chyba_cislo(a, b):
-    return (set(a) - set(b)).pop()
+    return (set(a) - set(b)).remove()
 
 
 with open("input_.txt", "r") as subor:

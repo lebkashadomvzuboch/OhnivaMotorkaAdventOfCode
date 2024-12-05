@@ -43,7 +43,7 @@ with open("input_.txt", "r") as subor:
         pocet = int(info.split(" from ")[0].strip("move "))
 
         for i in range(pocet):
-            cranes[do-1].insert(0, cranes[od-1].pop(0))
+            cranes[do-1].insert(0, cranes[od-1].remove(0))
 
     s = ""
     for c in cranes:
