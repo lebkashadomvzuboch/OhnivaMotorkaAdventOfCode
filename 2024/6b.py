@@ -58,3 +58,6 @@ for v in range(vyska):
 
 print(vysledok)
 # vysledok je 1586
+
+# da sa to optimalizovat:
+    # davat prekazky len tam, kde prejde aj straznik
