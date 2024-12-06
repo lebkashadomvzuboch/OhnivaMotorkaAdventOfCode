@@ -18,6 +18,7 @@ with open("input.txt", "r") as subor:
                 pravidla[i[1]].append(i[0])
             else:
                 pravidla[i[1]] = [i[0]]
+                
 
 def skontroluj_manual(manual):
     m = True
