@@ -53,5 +53,4 @@ for p in prazdne_pole:
         if l == "#":
             vysledok += 1
 
-print(vysledok)
-# vysledok je 934
+print(vysledok)# vysledok je 934
